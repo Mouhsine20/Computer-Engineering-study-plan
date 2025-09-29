@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Engineering Study Plan</title>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #cfd9df, #e2ebf0); /* Softer, elegant background */
+    padding: 30px;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    color: #4b0082;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+h2 {
+    color: #4b0082;
+    margin-top: 30px;
+}
+/* Tree container */
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+ul {
+    padding-left: 20px;
+}
+ul::before {
+    content: '';
+    border-left: 2px solid #4b0082;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+}
+li {
+    margin: 15px 0;
+    padding-left: 20px;
+    cursor: pointer;
+}
+li::before {
+    content: '';
+    border-top: 2px solid #4b0082;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 20px;
+}
+li span {
+    display: inline-block;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+li span:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.3);
+}
+/* Collapsible list */
+li ul {
+    display: none;
+}
+li.active > ul {
+    display: block;
+}
+/* Chain colors */
+.programming { background: #1E90FF; }
+.electrical { background: #FF8C00; }
+.math { background: #32CD32; }
+.capstone { background: #8A2BE2; }
+.general { background: #808080; }
+</style>
+</head>
+<body>
+
+<h1>Computer Engineering Study Plan</h1>
+
+<h2>🖥️ Programming / Software Chain</h2>
+<ul>
+    <li>
+        <span class="programming">CSC 112 Intro To Computer Programming</span>
+        <ul>
+            <li><span class="programming">CSC 113 Intro to Computer Programming Lab</span></li>
+            <li>
+                <span class="programming">CSC 211 Object-Oriented Programming</span>
+                <ul>
+                    <li>
+                        <span class="programming">CSC 215 Data Structures and Algorithms</span>
+                        <ul>
+                            <li>
+                                <span class="programming">CSC 316 Database Systems</span>
+                                <ul>
+                                    <li>
+                                        <span class="programming">CSC 432 Embedded Systems Design</span>
+                                        <ul>
+                                            <li><span class="programming">CSC 492 Senior Design Project</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span class="programming">CSC 312 Operating System Fundamentals</span>
+        <ul>
+            <li>
+                <span class="programming">CSC 462 Data Comm. and Networks</span>
+                <ul>
+                    <li><span class="programming">CSC 463 Data Comm. and Networks Lab</span></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h2>⚡ Electrical / Electronics Chain</h2>
+<ul>
+    <li>
+        <span class="electrical">EEEN 280 Electric Circuit Analysis</span>
+        <ul><li><span class="electrical">EEEN 281 Electric Circuit Lab</span></li></ul>
+    </li>
+    <li>
+        <span class="electrical">EEEN 220 Signals & Systems</span>
+        <ul><li><span class="electrical">EEEN 221 Signals & Systems Lab</span></li></ul>
+    </li>
+    <li>
+        <span class="electrical">EEEN 233 Linear Electronics I</span>
+        <ul><li><span class="electrical">EEEN 334 Linear Electronics I Lab</span></li></ul>
+    </li>
+    <li>
+        <span class="electrical">EEEN 331 Digital System Design</span>
+        <ul><li><span class="electrical">EEEN 332 Digital System Design Lab</span></li></ul>
+    </li>
+    <li>
+        <span class="electrical">CENG 315 Microprocessor</span>
+        <ul><li><span class="electrical">CENG 316 Microprocessor Lab</span></li></ul>
+    </li>
+    <li>
+        <span class="electrical">CENG 431 Embedded Systems Design</span>
+        <ul><li><span class="electrical">CENG 432 Embedded Systems Lab</span></li></ul>
+    </li>
+</ul>
+
+<h2>📐 Math & Physics Chain</h2>
+<ul>
+    <li>
+        <span class="math">MATH 113 Calculus I</span>
+        <ul>
+            <li>
+                <span class="math">MATH 114 Calculus II</span>
+                <ul>
+                    <li>
+                        <span class="math">MATH 225 Discrete Mathematics</span>
+                        <ul>
+                            <li>
+                                <span class="math">MATH 203 Linear Algebra</span>
+                                <ul>
+                                    <li><span class="math">MATH 214 Differential Equations</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span class="math">PHYS 110 Physics I</span>
+        <ul>
+            <li>
+                <span class="math">PHYS 111 Physics I Lab</span>
+                <ul>
+                    <li>
+                        <span class="math">PHYS 220 Physics II</span>
+                        <ul>
+                            <li><span class="math">PHYS 221 Physics II Lab</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h2>📊 Engineering / Capstone</h2>
+<ul>
+    <li>
+        <span class="capstone">ENGR 450 Engineering Seminar</span>
+        <ul>
+            <li><span class="capstone">ENGR 491/493 Senior Design Project I/II</span></li>
+        </ul>
+    </li>
+</ul>
+
+<h2>🌍 General Education</h2>
+<ul>
+    <li><span class="general">ENGL 101</span></li>
+    <li><span class="general">UNIV 100</span></li>
+    <li><span class="general">UNIV 200</span></li>
+    <li><span class="general">MEST 100</span></li>
+    <li><span class="general">ARAB 101/110</span></li>
+    <li><span class="general">PHIL/ENGL 200</span></li>
+    <li><span class="general">UAE 200</span></li>
+    <li><span class="general">Social/Behavioral Sciences</span></li>
+</ul>
+
+<script>
+document.querySelectorAll('li span').forEach(span => {
+    span.addEventListener('click', e => {
+        e.stopPropagation();
+        span.parentElement.classList.toggle('active');
+    });
+});
+</script>
+
+</body>
+</html>
